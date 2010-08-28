@@ -1,18 +1,21 @@
-project(UTILS)
-cmake_minimum_required(VERSION 2.8)
+project(COW_UTILS)
+cmake_minimum_required(VERSION 2.6)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-set(SOURCE
-    ${UTILS_SOURCE_DIR}/src/buffer_test.cpp
+ENABLE_TESTING()
+
+set(TEST_SOURCES
+    ${COW_UTILS_SOURCE_DIR}/test/buffer_test.cpp
 )
 
-set(HEADERS
-    ${UTILS_SOURCE_DIR}/include/buffer.hpp
+set(BUFFER_HEADERS
+    ${COW_UTILS_SOURCE_DIR}/buffer/include
 )
 
 include_directories(
-    ${UTIL_SOURCE_DIR}/include
+    ${BUFFER_HEADERS}
 )
                  
-add_executable(buffer_test ${SOURCE} ${HEADERS})
+add_executable(buffer_test ${TEST_SOURCES} ${BUFFER_HEADERS})
+ADD_TEST(BufferTest buffer_test)
