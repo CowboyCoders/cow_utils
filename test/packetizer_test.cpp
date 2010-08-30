@@ -29,7 +29,7 @@ or implied, of CowboyCoders.
 #include <fstream>
 #include <cstdio>
 #include "packetizer.hpp"
-#include "cow/utils/buffer.hpp"
+#include "buffer.hpp"
 #include "movie_packet.hpp"
 
 int main()

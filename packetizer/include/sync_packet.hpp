@@ -28,7 +28,9 @@ or implied, of CowboyCoders.
 
 #ifndef ___sync_packet_hpp___
 #define ___sync_packet_hpp___
+
 #include <cstring>
+
 namespace libcow
 {
     /**

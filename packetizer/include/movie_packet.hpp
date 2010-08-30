@@ -28,8 +28,10 @@ or implied, of CowboyCoders.
 
 #ifndef ___movie_packet_hpp___
 #define ___movie_packet_hpp___
+
 #include <cstring>
-#include "cow/utils/buffer.hpp"
+#include "buffer.hpp"
+
 namespace libcow
 {
     /**

@@ -38,7 +38,7 @@ or implied, of CowboyCoders.
 
 #include "sync_packet.hpp"
 #include "movie_packet.hpp"
-#include "cow/utils/buffer.hpp"
+#include "buffer.hpp"
 
 namespace libcow
 {

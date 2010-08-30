@@ -26,7 +26,6 @@ authors and should not be interpreted as representing official policies, either 
 or implied, of CowboyCoders.
 */
 
-#include "cow/libcow_def.hpp"
 #include "packetizer.hpp"
 
 #include <iostream>
